@@ -5,7 +5,7 @@ internal class Program
 {    
     static void Main(string[] args)
     {
-        //Ummutable strings
+        //Ummutable string examples
 
         string firstString = "My first string";
 

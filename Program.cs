@@ -1,4 +1,5 @@
-﻿
+﻿using Funcs = MyConsoleApp.Functionalities;
+
 namespace MyConsoleApp;
 
 internal class Program
@@ -46,7 +47,7 @@ internal class Program
         Console.WriteLine(text);
 
         // my functionalities with Singleton pattern
-        var funcionalities = Functionalities.getInstance();
+        var funcionalities = Funcs.Functionalities.getInstance();
 
         Console.WriteLine(funcionalities.EditText("8 manzanas rojas", 3));
     }

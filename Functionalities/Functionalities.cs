@@ -1,4 +1,4 @@
-﻿namespace MyConsoleApp;
+﻿namespace MyConsoleApp.Functionalities;
 
 public class Functionalities
 {

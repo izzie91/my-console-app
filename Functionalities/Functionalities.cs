@@ -26,4 +26,26 @@ public class Functionalities
 
         return myNewString.TrimEnd();
     }
+
+    public string OtherEditText(string text, int number)
+    {
+        string[] substrings = text.Split(' ');
+        substrings[0] = number.ToString();
+        string myNewString = string.Empty;
+
+        foreach (string s in substrings)
+        {
+            myNewString = string.Concat([myNewString, s, " "]);
+        }
+
+        return myNewString.TrimEnd();
+    }
+
+    public void IterateOverString(string text)
+    {
+        for (int i = 0; i < text.Length; i++)
+        {
+            Console.Write(text[i] + "\n");
+        }
+    }
 }

@@ -78,7 +78,7 @@ internal class Program
         computing.Calculate("Mult", 5, 10);
 
         // Factory
-        var factoryExample = new FactoryMessage();
+        var factoryExample = new FactoryMessage("email");
         factoryExample.DisplayMessage();
 
         var showRoom = new ShowRoom.ShowRoom();

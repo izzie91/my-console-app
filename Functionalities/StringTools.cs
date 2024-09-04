@@ -1,20 +1,20 @@
 ﻿namespace MyConsoleApp.Functionalities;
 
-public class Functionalities
+public class StringTools
 {
-    private static Functionalities _instance = null;
-    private Functionalities() { }
+    private static StringTools _instance = null;
+    private StringTools() { }
 
-    public static Functionalities getInstance()
+    public static StringTools getInstance()
     {
         if (_instance == null)
         {
-            _instance = new Functionalities();
+            _instance = new StringTools();
         }
         return _instance;
     }
 
-    public string EditText(string text, int number)
+    public string ReplaceNumberInString(string text, int number)
     {
         string[] substrings = text.Split(' ');
         substrings[0] = number.ToString();
@@ -27,7 +27,7 @@ public class Functionalities
         return myNewString.TrimEnd();
     }
 
-    public string OtherEditText(string text, int number)
+    public string OtherReplaceNumberInString(string text, int number)
     {
         string[] substrings = text.Split(' ');
         substrings[0] = number.ToString();

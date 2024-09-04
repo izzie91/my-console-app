@@ -1,4 +1,4 @@
-﻿namespace MyConsoleApp.Enums;
+﻿namespace MyConsoleApp;
 
 public enum COUNTRIES
 {

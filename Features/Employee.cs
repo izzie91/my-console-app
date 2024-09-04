@@ -1,6 +1,4 @@
-﻿using MyConsoleApp.Enums;
-
-namespace MyConsoleApp.Features;
+﻿namespace MyConsoleApp.Features;
 
 public class Employee
 {    

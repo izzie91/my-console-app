@@ -49,10 +49,10 @@ internal class Program
         Console.WriteLine(text);
 
         // my functionalities with Singleton pattern
-        var funcionalities = Funcs.Functionalities.getInstance();
+        var stringTools = Funcs.StringTools.getInstance();
 
-        Console.WriteLine(funcionalities.EditText("18 manzanas rojas", 3));
-        Console.WriteLine(funcionalities.OtherEditText("18 manzanas rojas", 3));
+        Console.WriteLine(stringTools.ReplaceNumberInString("18 manzanas rojas", 3));
+        Console.WriteLine(stringTools.OtherReplaceNumberInString("18 manzanas rojas", 3));
 
         // examples const (compile time constant) and read only (runtime constant) values
         var employee = new Employee("Isabel", "Arnaiz");
@@ -71,7 +71,7 @@ internal class Program
 
         // iterate over string example
         string str = "test";
-        funcionalities.IterateOverString(str);
+        stringTools.IterateOverString(str);
 
         // Computing
         var computing = Computing.Computing.getInstance();

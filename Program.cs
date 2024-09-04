@@ -1,8 +1,7 @@
-﻿using MyConsoleApp.Enums;
-using MyConsoleApp.Features;
+﻿using MyConsoleApp.Features;
 using Funcs = MyConsoleApp.Functionalities;
-using Computing = MyConsoleApp.Computing;
 using MyConsoleApp.Features.Messages;
+using MyConsoleApp.ShowRoom;
 
 namespace MyConsoleApp;
 
@@ -81,5 +80,8 @@ internal class Program
         // Factory
         var factoryExample = new FactoryMessage();
         factoryExample.DisplayMessage();
+
+        var showRoom = new ShowRoom.ShowRoom();
+        showRoom.DisplayPeople();
     }
 }
